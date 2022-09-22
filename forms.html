@@ -8,12 +8,40 @@
 </head>
 <body>
   <h1>Travel Suggestions</h1>
+
+  <!-- 
+    The form tag is used to create a container where all the inputs for a form
+    must be put inside.
+    The attributes that are required are name, id, and method.
+    name gives some descriptive information about what the form will be used for.
+    id allows us to reference this form later in fieldsets and other areas of our
+    code.
+    method has two typical values: get and post. Get is used for forms that do
+    not ask for personal information (search bars, etc.). Post is used for forms
+    that ask for personal information (login and signup pages, etc.).
+  -->
   <form name="travel-suggestions" id="travel" method="get">
+
+    <!-- 
+      This is a text input. type="text", name, and id are all required attributes.
+      The required attribute is only necessary when you want to make sure the user
+      has to fill in the input before submitting the form.
+      All inputs need a label with the for attribute that links the label to the
+      input using the input's id attribute.
+      When an input is required, it is important to include the word required
+      in the label's text.
+    -->
     <label for="travel-location">Please Enter the City or Country You Suggest I Travel to [required]:</label>
     <input type="text" name="destination" id="travel-location" required />
 
-    <label for="password">Please Enter Your Password:</label>
-    <input type="password" name="userPassword" id="password" />
+    <!-- 
+      This is a password input. type="password", name, and id are all required 
+      attributes.
+      As always, each input needs a label with the for attribute to link the label
+      to an input.
+    -->
+    <!-- <label for="password">Please Enter Your Password:</label>
+    <input type="password" name="userPassword" id="password" /> -->
   </form>
 </body>
 </html>
