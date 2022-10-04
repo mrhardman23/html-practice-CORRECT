@@ -135,20 +135,20 @@
       type of input (i.e., radio buttons, text-based, etc.), you should use
       the other method of getting this information.
     -->
-    <label for="country">Which country is this location in? [required]</label>
-    <select name="countrySelect" id="country" required>
+    <!-- <label for="country">Which country is this location in? [required]</label>
+    <select name="countrySelect" id="country" required> -->
       <!-- 
         optgroups let you group the options inside your select input.
         label is required so that the optgroup displays what the category is
         for the options inside that group.
       -->
-      <optgroup label="North America">
+      <!-- <optgroup label="North America"> -->
         <!-- 
           The option tag is the actual option that a user can select. 
           It requires the value attribute for when the selection gets sent to
           the server.
         -->
-        <option value="canada">Canada</option>
+        <!-- <option value="canada">Canada</option>
         <option value="unitedStates">U.S.A.</option>
         <option value="mexico">Mexico</option>
       </optgroup>
@@ -170,7 +170,7 @@
       <optgroup label="Australia">
         <option value="australia">Australia</option>
       </optgroup>
-    </select>
+    </select> -->
     <br />
     <br />
     <!-- 
@@ -183,25 +183,36 @@
       a user can type before their input goes to thwe next line.
     -->
     <label for="comments">Additional Comments</label>
+    <br />
     <textarea name="additionalComments" id="comments" rows="10" cols="50"></textarea>
-    <br />
-    <br />
 
     <!-- 
       This is a telephone input. type="tel", name, and id are all required.
       minlength and maxlength can be good attributes to use for some basic error-checking.
     -->
-    <label for="telephone">Please enter your telephone number [Example: 1-555-867-5309]:</label>
-    <input type="tel" name="userTel" id="telephone" minlength="14" maxlength="22" />
+    <!-- <label for="telephone">Please enter your telephone number [Example: 1-555-867-5309]:</label>
+    <input type="tel" name="userTel" id="telephone" minlength="14" maxlength="22" /> -->
 
     <br />
     <br />
+    <br />
+    <br />
 
+    <!-- 
+      This is an example of a reset button input. type="reset", name and id are all required.
+      value is an optional attribute for if you want to change the default text on the button.
+    -->
     <input type="reset" name="clearForm" id="clear" value="Click This to Clear All Inputs" />
 
     <br />
     <br />
+    <br />
+    <br />
 
+    <!-- 
+      This is an example of a submit button input. Note: This input has to be inside the form tag.
+      type="submit", name, and id are all required. value is optional for the same reason as reset.
+    -->
     <input type="submit" name="submitButton" id="submit" value="Click This to Submit Your Suggestion" />
 
     <!-- 
